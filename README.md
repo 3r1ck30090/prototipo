@@ -16,6 +16,8 @@ colocar *
 si la operacion es igual a division
 colocar / 
 Resultado = (num 1 + num 2, num 1 - num2, num1 * num2, num1 / num2), 
+si num=0 imprimir (no es posible dividir en 0)
+volver a num2 y vuelve a escribir
 
 Con codigo seria como:
 
