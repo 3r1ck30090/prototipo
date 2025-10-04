@@ -103,5 +103,5 @@ elif opcion in ["7", "8"]:
             print("Resultado de la suma de matrices:")
             imprimir_matriz(suma_mat(mat1, mat2))
         elif opcion == "8":
-            print("Resultado de la multiplicación (elemento a elemento):")
+            print("Resultado de la multiplicación:")
             imprimir_matriz(mult_mat(mat1, mat2))
