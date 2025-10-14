@@ -213,17 +213,18 @@ elif opcion == "6":
 elif opcion in ["7", "8"]:
     mat1 = leer_matriz()
     mat2 = leer_matriz()
+
+    if opcion == "7":
  """
  con condicional se usa como limite para las matrizes porque si la matriz es distinta de tamaño
  no podra sumar
  """
-    if len(mat1) != len(mat2) or len(mat1[0]) != len(mat2[0]):
-        print("No es posible operar con matrices de diferente tamaño")
-    else:
-        if opcion == "7":
+        if len(mat1) != len(mat2) or len(mat1[0]) != len(mat2[0]):
+            print("No es posible operar con matrices de diferente tamaño")
+        else:
             print("Resultado de la suma de matrices:")
             imprimir_matriz(suma_mat(mat1, mat2))
-        elif opcion == "8":
+    if opcion == "8":
             print("Resultado de la multiplicación:")
             imprimir_matriz(mult_mat(mat1, mat2))
 
@@ -239,3 +240,4 @@ elif opcion == "11":
 else:
 
     print("Opción no válida.")
+
