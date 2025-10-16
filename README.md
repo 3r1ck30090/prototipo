@@ -43,7 +43,7 @@ contexto esta idea surgio porque fue lo más basico que se me ocurrio, ademas de
 ademas tiene varias interacciones:
 Entrada del usuario: aqui el usuario elige lo que gusta calcular
 Procesamiento interno: aqui el programa con los datos del usuario 
-Cálculos: aqui hay operadores basicos, operaciones de grado 2 y con biblotecas sacadas de (link) y (link) pude hacer que las raices funciones y que el mismo codigo saque un numero aleatorio 
+Cálculos: aqui hay operadores basicos, operaciones de grado 2 y con biblotecas sacadas de [(link)](https://docs.python.org/es/3.13/library/random.html) , [(link)](https://docs.python.org/3/library/functions.html#pow) y [(link) ](https://docs.python.org/3/library/math.html#math.sqrt) pude hacer que las raices funcionen , que el mismo codigo saque un numero aleatorio y usar el pow para poder usar potencias  
 Salida o resultado: al final saca el resultado del problema que el usuario tenga 
 
 # INSTRUCCIONES
