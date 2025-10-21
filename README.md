@@ -22,31 +22,31 @@ He visto que hay comandos como `range` y con ellos puedo mejorar la calculadora 
 ## Con código sería como
 
 ``python
--print('calculadora')
--num1 = float(input('ingresa el primer número'))
--operacion = input('qué operación quieres usar (suma, resta, multiplicación, división)')
--num2 = float(input('ingresa el segundo número'))
+- print('calculadora')
+- num1 = float(input('ingresa el primer número'))
+- operacion = input('qué operación quieres usar (suma, resta, multiplicación, división)')
+- num2 = float(input('ingresa el segundo número'))
 
--if operacion == 'suma':
+- if operacion == 'suma':
   -  res = num1 + num2
--if operacion == 'resta':
+- if operacion == 'resta':
  -   res = num1 - num2
--if operacion == 'multiplicación':
+- if operacion == 'multiplicación':
  -   res = num1 * num2
--if operacion == 'división':
+- if operacion == 'división':
  -   res = num1 / num2
 
--print('resultado es =', res)
+- print('resultado es =', res)
 
 
 
 # CALCULADORA
 contexto esta idea surgio porque fue lo más basico que se me ocurrio, ademas desde el inicio de las matematicas en el siglo VVII fue algo que se creo solo con operadores basicos como las sumas y restas 
 ademas tiene varias interacciones:
--Entrada del usuario: aqui el usuario elige lo que gusta calcular
--Procesamiento interno: aqui el programa con los datos del usuario 
--Cálculos: aqui hay operadores basicos, operaciones de grado 2 y con biblotecas sacadas de [(random.random)](https://docs.python.org/es/3.13/library/random.html) , [(pow)](https://docs.python.org/3/library/functions.html#pow) y [(math.sqrt) ](https://docs.python.org/3/library/math.html#math.sqrt) pude hacer que las raices funcionen , que el mismo codigo saque un numero aleatorio y usar el pow para poder usar potencias  
--Salida o resultado: al final saca el resultado del problema que el usuario tenga 
+- Entrada del usuario: aqui el usuario elige lo que gusta calcular
+- Procesamiento interno: aqui el programa con los datos del usuario 
+- Cálculos: aqui hay operadores basicos, operaciones de grado 2 y con biblotecas sacadas de [(random.random)](https://docs.python.org/es/3.13/library/random.html) , [(pow)](https://docs.python.org/3/library/functions.html#pow) y [(math.sqrt) ](https://docs.python.org/3/library/math.html#math.sqrt) pude hacer que las raices funcionen , que el mismo codigo saque un numero aleatorio y usar el pow para poder usar potencias  
+- Salida o resultado: al final saca el resultado del problema que el usuario tenga 
 
 # INSTRUCCIONES
 Descargar el arvhivo y correr en terminal con:
