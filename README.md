@@ -49,6 +49,7 @@ ademas tiene varias interacciones:
 - Salida o resultado: al final saca el resultado del problema que el usuario tenga 
 
 # INSTRUCCIONES
-Descargar el arvhivo y correr en terminal con:
-Proyect.py
-abrir en Thonny y dar boton de play.
+- Descargar el arvhivo y correr en terminal con:
+- Proyect.py
+- abrir en Thonny y dar boton de play.
+ 
