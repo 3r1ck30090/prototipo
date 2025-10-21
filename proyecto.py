@@ -1,8 +1,8 @@
 """
 Proyecto Calculadora 
 El proyecto trata de simular como una calculadora 
-y darle al usuario lo que quiera que este a su alcance usando operadores basicos
-o funciones más avanzadas
+y darle al usuario lo que quiera que este a su alcance 
+usando operadores basicoso funciones más avanzadas
 """
 #bibliotecas
 import random
@@ -11,7 +11,8 @@ esta bibloteca la use como especie de dado entre numeros que pida el usuario
 """
 import math
 """
-esta bibloteca la use para poder usar las potencias y las raices de un numero que guste el usuario 
+esta bibloteca la use para poder usar las potencias y 
+las raices de un numero que guste el usuario 
 """
 """
 operadores basicos
@@ -44,7 +45,8 @@ def division(a, b):
     """
     uso de operadores, funciones y condicional (a, b) 
     pide a valor númerico  y b valor númerico
-    el programa y a y b y devuelve el resultado de dicha operacion y si termina una division
+    el programa y a y b y devuelve el resultado de dicha operacion y
+      si termina una division mostrara que es 
     matematicamente imposible devuelve error 
     """
     if b != 0:
@@ -52,11 +54,14 @@ def division(a, b):
     else:
         return "Error, no se puede dividir entre 0"
 
-def porcentaje(a, b):
+def descuento(a, b):
     """
     uso de operadores y funciones (a, b) 
-    pide a valor númerico  y b valor númerico
-    el programa usa a como el valor principal y b como el porcentaje y devuelve el resultado de dicha operacion
+    pide a valor del precio  y b valor del descuento
+    el programa usa a como el valor principal y b 
+    como el porcentaje y devuelve el resultado de dicha 
+    operacion pensado para que se vea de forma
+      sencilla el descuento
     """
     return a * (b / 100)
 
@@ -64,7 +69,9 @@ def factorial(n):
     """
     uso de operadores, funciones, condicional y ciclos (n) 
     pide a valor númerico 
-    el programa usa n como el numero con el factorial, si el usuario pide numeros negativos marcara error al no ser posible y utilizando ciclos
+    el programa usa n como el numero con el factorial, 
+    si el usuario pide numeros negativos marcara error al no ser posible y
+      utilizando ciclos
     va restando su mismo numero para ir multiplicando
     """
     if n < 0:
@@ -78,8 +85,10 @@ def factorial(n):
 def leer_matriz():
     """
     uso de funciones, listas, listas anadinas, ciclos y ciclos anidados
-    pide n valor de escala y pide i y j como valores de escala y numerico pidiendo al usuario escribir su propia matriz
-    el programa con los datos dados crea la matriz y la guarda para que el usuario la pueda sumar o multiplicar 
+    pide n valor de escala y pide i y j como valores de escala y numerico 
+    pidiendo al usuario escribir su propia matriz
+    el programa con los datos dados crea la matriz y la guarda para que 
+    el usuario la pueda sumar o multiplicar 
     """
     n = int(input("Elige el tamaño: 2 para 2x2 o 3 para 3x3: "))
     print("Ingresa los valores de la matriz:")
@@ -94,9 +103,12 @@ def leer_matriz():
 
 def suma_mat(a, b):
     """
-    uso de operadores, funciones, listas, listas anidadas, ciclos ,ciclos anidadas
-    usando la matriz que fue solicitada en la anterior funcion suma la matriz de fila a columna (i, j) y más adelante si el tamaño es distinto 
-    marcara error al no ser posible 
+    uso de operadores, funciones, listas, listas anidadas, 
+    ciclos ,ciclos anidadas
+    usando la matriz que fue solicitada en la anterior
+    usamos la funcion suma la matriz de
+    fila a columna (i, j) y más adelante si el tamaño es distinto
+    marcara error al no ser posible
     usando n de la anterior funcion para ver la matriz guardada
     """
     n = len(a)
@@ -108,8 +120,11 @@ def suma_mat(a, b):
 
 def mult_mat(a, b):
     """
-    uso de operadores, funciones, listas, listas anidadas, ciclos ,ciclos anidadas
-    usando la matriz que fue solicitada en la anterior funcion multiplica la matriz de fila a columna (i, j) 
+    uso de operadores, funciones, listas, listas anidadas, 
+    ciclos ,ciclos anidadas
+    usando la matriz que fue solicitada en la anterior
+      funcion multiplica la matriz
+      de fila a columna (i, j) 
     usando n de la anterior funcion para ver la matriz guardada
     """
     n = len(a)
@@ -121,17 +136,21 @@ def mult_mat(a, b):
 
 def imprimir_matriz(matriz):
     """
-    uso de funciones, listas, listas anidadas, ciclos, ciclos anidadas
-    despues de que la matriz dada y calculada esta funcion imprime el resultado de dicha matriz si es posible 
+    uso de funciones, listas, listas anidadas, 
+    ciclos, ciclos anidadas
+    despues de que la matriz dada y calculada esta funcion imprime el 
+    resultado de dicha matriz si es posible 
     """
     for fila in matriz:
         print(fila)
 
 def num_random():
     """
-    uso de funciones, listas, listas anidadas, ciclos, ciclos anadidos y biblotecas
-    recibe n como el total de numeros en la lista y valor para el tener esos numeros aleatorios o no que de el usuario para devolver 
-    en esa lista un numero al azar 
+    uso de funciones, listas, listas anidadas, ciclos, 
+    ciclos anadidos y biblotecas
+    recibe n como el total de numeros en la lista y
+      valor para el tener esos numeros aleatorios 
+    en esa lista devuelve un numero al azar 
     """
     n = int(input("¿Cuántos números tendrá la lista?: "))
     lista = []
@@ -168,7 +187,7 @@ print("1. Suma")
 print("2. Resta")
 print("3. Multiplicación")
 print("4. División")
-print("5. Porcentaje")
+print("5. Descuento")
 print("6. Factorial")
 print("7. Suma de Matrices")
 print("8. Multiplicación de Matrices")
@@ -178,12 +197,7 @@ print("11. Raices")
 print("\n")
 opcion = input("Elige una opción: ")
 """
-Lista de opciones para elegir
-"""
-"""
-usando condicional dependiendo de la opcion elegida usa una funcion y con una lista guarda los operadores basicos [1 , 2 , 3, 4 , 5] que usan 
-solo 2 variables (a, b) para facilitar y no andar poniendo variables a cada funcion 
-y si es distinto a los operadores basico usa otras funciones y operadores y si pone otro numero que no este marca invalido 
+
 """
 if opcion in ["1", "2", "3", "4", "5"]:
     a = int(input("Número 1: "))
@@ -196,16 +210,13 @@ if opcion in ["1", "2", "3", "4", "5"]:
     elif opcion == "3":
         print("Resultado de la multiplicación:", multiplicacion(a, b))
     elif opcion == "4":
-        """
-        con ciclos si el usuario como al dividendo como 0 lo devolvera la opcion para que cambie de numero 
-        y seguira asi hasta que el 0 no este en la variable
-        """
+      
         while b == 0:
             print("No se puede dividir entre 0, intenta de nuevo.")
             b = int(input("Número 2: "))
         print("Resultado de la división:", division(a, b))
     elif opcion == "5":
-        print("Resultado del porcentaje:", porcentaje(a, b))
+        print("El descuento aplicado es de:", descuento(a, b))
 elif opcion == "6":
     n = int(input("Introduce un número entero para calcular su factorial: "))
     print("Factorial:", factorial(n))
@@ -215,10 +226,7 @@ elif opcion in ["7", "8"]:
     mat2 = leer_matriz()
 
     if opcion == "7":
-        """
-        con condicional se usa como limite para las matrizes porque si la matriz es distinta de tamaño
-        no podra sumar
-        """
+ 
         if len(mat1) != len(mat2) or len(mat1[0]) != len(mat2[0]):
             print("No es posible operar con matrices de diferente tamaño")
         else:
