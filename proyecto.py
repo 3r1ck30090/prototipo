@@ -151,12 +151,13 @@ def num_random():
     recibe n como el total de numeros en la lista y
       valor para el tener esos numeros aleatorios 
     en esa lista devuelve un numero al azar 
+    escogiendo una posicion  aleatoria
     """
     n = int(input("¿Cuántos números tendrá la lista?: "))
     lista = []
 
     for i in range(n):
-        valor = input("Ingrese los número: ")
+        valor = input("Ingrese los números que quiera escoger al azar: ")
         lista.append(valor)
 
     indice = int(random.random() * len(lista))
@@ -247,3 +248,4 @@ elif opcion == "11":
     print("La raiz es:", raiz_cuadrada(x))
 else:
     print("Opción no válida.")
+
