@@ -8,7 +8,7 @@ y pueda escoger algo por el de forma aleatoria pero de ahi use todos los compone
 
 ## Algoritmo
 - Importar random, math y sys
-- REPETIR
+- WHILE
 - Mostrar menú de opciones
   - Leer opción
     - SI opción = 1 → leer A, B → mostrar suma(A, B)
