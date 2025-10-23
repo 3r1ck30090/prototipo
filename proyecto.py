@@ -67,7 +67,7 @@ def division(a, b):
     else:
         return "Error, no se puede dividir entre 0"
 
-def Descuento(a, b):
+def descuento(a, b):
     """
     uso de operadores y funciones (a, b) 
     pide a valor númerico  y b valor númerico de oferta
@@ -234,7 +234,7 @@ while True:
     elif opcion == "5":
             a = int(input("¿Cúal es el precio original?: "))
             b = int(input("¿Cúal es el porcentaje de descuento?: "))
-            print("El descuento seria de:", Descuento(a, b))
+            print("El descuento seria de:", descuento(a, b))
 
     elif opcion == "6":
         n = int(input("Introduce un número para calcular su factorial: "))
@@ -273,3 +273,4 @@ while True:
     if continuar != "s":
         print("Eso Eso Eso es todo amigos")
         sys.exit()
+
