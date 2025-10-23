@@ -6,40 +6,128 @@ He visto que hay comandos como `range` y con ellos puedo mejorar la calculadora 
 ---
 
 ## Algoritmo
-- Mostrar “Calculadora básica”  
-- Ingresar el primer número/valor  
-- Escoger la operación (suma, resta, multiplicación, división)  
-- Ingresar el segundo número/valor  
-- Si la operación es igual a suma → colocar `+`  
-- Si la operación es igual a resta → colocar `-`  
-- Si la operación es igual a multiplicación → colocar `*`  
-- Si la operación es igual a división → colocar `/`  
-- Resultado = (num1 + num2, num1 - num2, num1 * num2, num1 / num2)  
-- Si `num2 = 0` imprimir “no es posible dividir en 0”  
-- Volver a `num2` y volver a escribir
+## 📌 Importación de Bibliotecas
+- `random`
+- `math`
+- `sys`
+##  Funciones Básicas
 
-
-## Con código sería como
-
-``python
-- print('calculadora')
-- num1 = float(input('ingresa el primer número'))
-- operacion = input('qué operación quieres usar (suma, resta, multiplicación, división)')
-- num2 = float(input('ingresa el segundo número'))
-
-- if operacion == 'suma':
-  -  res = num1 + num2
-- if operacion == 'resta':
- -   res = num1 - num2
-- if operacion == 'multiplicación':
- -   res = num1 * num2
-- if operacion == 'división':
- -   res = num1 / num2
-
-- print('resultado es =', res)
-
-
-
+###  Función `suma(a, b)`
+Retorna:
+- a + b
+### Función `resta(a, b)`
+Retorna:
+- a - b
+### Función `multiplicación(a, b)`
+Retorna:
+- a * b
+### Función `división(a, b)`
+Condiciones:
+- Si `b ≠ 0` → retornar `a / b`
+- Si no → retornar error
+### Función `descuento(a, b)`
+Retorna:
+- a * (b / 100)
+## Función `factorial(n)`
+Condiciones:
+- Si `n < 0` → retornar error
+- Proceso:
+- resultado = 1
+- Mientras n > 1:
+- resultado = resultado * n
+- n = n - 1
+- Retornar resultado
+## Función `leer_matriz()`
+- 1. Solicitar tamaño (2 o 3)
+- 2. Crear matriz vacía
+- 3. Para cada fila y columna:
+   - Pedir valor al usuario
+   - Guardar
+- 4. Retornar matriz
+## Función `suma_mat(a, b)`
+Proceso:
+- Crear matriz resultado
+- Para i y j:
+- resultado[i][j] = a[i][j] + b[i][j]
+- Retornar resultado
+## Función `mult_mat(a, b)`
+Proceso:
+- Crear matriz resultado
+- Para i y j:
+- resultado[i][j] = a[i][j] * b[i][j]
+- Retornar resultado
+## Función `imprimir_matriz(matriz)`
+Proceso:
+- Para cada fila:
+- imprimir fila
+## Función `num_random()`
+- 1. Solicitar cantidad de valores
+- 2. Leer valores y agregarlos a una lista
+- 3. Generar índice aleatorio
+- 4. Mostrar elemento seleccionado
+## Función `potencia(a, b)`
+Retorna:
+- pow(a, b)
+## Función `raiz_cuadrada(x)`
+Condiciones:
+- Si `x < 0` → retornar error
+- Si no → retornar:
+math.sqrt(x)
+##  Bucle Principal
+Repetir SIEMPRE mostrando menú:
+- Suma
+- Resta
+- Multiplicación
+- División
+- Descuento
+- Factorial
+- Suma de matrices
+- Multiplicación de matrices
+- Elección random
+- Potencia
+- Raíz
+- Salir
+## Validación de Opciones
+### `0` → Salir
+- Mostrar mensaje
+- Terminar programa
+### `1 a 4` → Operaciones básicas
+- Pedir número A
+- Pedir número B
+- Realizar operación
+- Mostrar resultado
+### `5` → Descuento
+- Pedir precio original
+- Pedir porcentaje
+- Mostrar resultado
+### `6` → Factorial
+- Pedir número
+- Mostrar resultado
+### `7` y `8` → Operaciones con matrices
+- Leer primera matriz
+- Leer segunda matriz
+- Si tamaños diferentes → error
+#### `7`: Sumar matrices
+- Mostrar resultado
+#### `8`: Multiplicar matrices
+- Mostrar resultado
+### `9` → Elección aleatoria
+- Ejecutar `num_random()`
+### `10` → Potencia
+- Pedir base
+- Pedir exponente
+- Mostrar resultado
+### `11` → Raíz cuadrada
+- Pedir número
+- Mostrar resultado
+### Otra opción:
+- Mostrar: “Opción no válida”
+##  Después de cada operación:
+¿Deseas realizar otra operación? (s/n)
+- Si respuesta ≠ `s`:
+  - Mostrar mensaje de despedida
+  - Salir del programa
+### Fin del Programa
 # CALCULADORA
 contexto esta idea surgio porque fue lo más basico que se me ocurrio, ademas desde el inicio de las matematicas en el siglo VVII fue algo que se creo solo con operadores basicos como las sumas y restas 
 ademas tiene varias interacciones:
