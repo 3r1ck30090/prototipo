@@ -244,15 +244,15 @@ while True:
         mat1 = leer_matriz()
         mat2 = leer_matriz()
 
-        if opcion == "7":
-            if len(mat1) != len(mat2) or len(mat1[0]) != len(mat2[0]):
-                print("No es posible operar con matrices de diferente tamaño")
-            else:
+        if len(mat1) != len(mat2) or len(mat1[0]) != len(mat2[0]):
+            print("No es posible operar con matrices de diferente tamaño")
+        else:
+            if opcion == "7":
                 print("Resultado de la suma de matrices:")
                 imprimir_matriz(suma_mat(mat1, mat2))
-        if opcion == "8":
-            print("Resultado de la multiplicación:")
-            imprimir_matriz(mult_mat(mat1, mat2))
+            if opcion == "8":
+                print("Resultado de la multiplicación de matrices:")
+                imprimir_matriz(mult_mat(mat1, mat2))
 
     elif opcion == "9":
         num_random()
