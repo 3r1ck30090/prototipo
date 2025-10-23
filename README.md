@@ -7,19 +7,17 @@ Pero despues de tanto aprender use todos los componentes que he visto hasta la f
 y pueda escoger algo por el de forma aleatoria pero de ahi use todos los componentes como listas y ciclos anidadas para las matrices lo unico que no he usado es el tema de archivos pero no encontre una manera de que se usen
 
 ## Algoritmo
-`INICIO
-
-Importar random, math y sys
-REPETIR
-    - Mostrar menú de opciones
-    - Leer opción
+- Importar random, math y sys
+- REPETIR
+- Mostrar menú de opciones
+  - Leer opción
     - SI opción = 1 → leer A, B → mostrar suma(A, B)
-    - SI opción = 2 → leer A, B → mostrar resta(A, B)
-    - SI opción = 3 → leer A, B → mostrar multiplicación(A, B)
-   - SI opción = 4 → leer A, B → SI B ≠ 0 mostrar división(A, B)
-   - SI opción = 5 → leer precio y porcentaje → mostrar descuento
-   - SI opción = 6 → leer N → mostrar factorial(N)
-   - SI opción = 7 o 8
+      - SI opción = 2 → leer A, B → mostrar resta(A, B)
+      - SI opción = 3 → leer A, B → mostrar multiplicación(A, B)
+     - SI opción = 4 → leer A, B → SI B ≠ 0 mostrar división(A, B)
+     - SI opción = 5 → leer precio y porcentaje → mostrar descuento
+     - SI opción = 6 → leer N → mostrar factorial(N)
+     - SI opción = 7 o 8
        - Leer matriz 1
        - Leer matriz 2
        - SI tamaños diferentes → error
