@@ -6,7 +6,7 @@ He visto que hay comandos como `range` y con ellos puedo mejorar la calculadora 
 ---
 
 ## Algoritmo
-## 📌 Importación de Bibliotecas
+## Importación de Bibliotecas
 - `random`
 - `math`
 - `sys`
