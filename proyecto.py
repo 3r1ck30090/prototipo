@@ -1,41 +1,93 @@
 """
 Proyecto Calculadora 
 El proyecto trata de simular como una calculadora 
-y darle al usuario lo que quiera que este a su alcance 
-usando operadores basicos o funciones más avanzadas
+y darle al usuario lo que quiera que este a su 
+alcance usando operadores basicos
+o funciones más avanzadas
 """
-#bibliotecas
+# bibliotecas
 import random
 """
-esta bibloteca la use como especie de dado entre numeros que pida el usuario
+esta bibloteca la use como especie de dado entre 
+numeros que pida el usuario
 """
 import math
 """
 esta bibloteca la use para poder usar las potencias y 
 las raices de un numero que guste el usuario 
 """
+import sys
+"""
+esta bibloteca la use para poder usar funciones del sistema
+y permiten interactuar directamente con el 
+sistema donde se está ejecutando tu programa
+lo use principalmente para salir del programa
+"""
 """
 operadores basicos
 """
+
 def suma(a, b):
+    """
+    uso de operadores y funciones (a, b) 
+    pide a valor númerico  y b valor númerico
+    el programa suma a y b y devuelve el resultado de dicha operacion
+    """
     return a + b
 
 def resta(a, b):
+    """
+    uso de operadores y funciones (a, b) 
+    pide a valor númerico  y b valor númerico
+    el programa resta a y b y devuelve el 
+    resultado de dicha operacion
+    """
     return a - b
 
 def multiplicacion(a, b):
+    """
+    uso de operadores y funciones (a, b) 
+    pide a valor númerico  y b valor númerico
+    el programa multiplica a y b y 
+    devuelve el resultado de dicha operacion
+    """
     return a * b
 
 def division(a, b):
+    """
+    uso de operadores, funciones y condicional (a, b) 
+    pide a valor númerico  y b valor númerico
+    el programa y a y b y devuelve el resultado 
+    de dicha operacion 
+    y si termina una division
+    matematicamente imposible devuelve error 
+    """
     if b != 0:
         return a / b
     else:
         return "Error, no se puede dividir entre 0"
 
-def descuento(a, b):
+def Descuento(a, b):
+    """
+    uso de operadores y funciones (a, b) 
+    pide a valor númerico  y b valor númerico de oferta
+    el programa usa a como el valor principal y b como 
+    el porcentaje
+      y devuelve el resultado de dicha operacion
+    """
     return a * (b / 100)
 
 def factorial(n):
+    """
+    uso de operadores, funciones, condicional y ciclos (n) 
+    pide a valor númerico 
+    el programa usa n como el numero con el 
+    factorial, si el usuario
+      pide numeros negativos marcara error 
+      al no ser posible y 
+      utilizando ciclos
+    va restando su mismo numero para ir multiplicando
+    """
     if n < 0:
         return "Error, no existe factorial de números negativos"
     resultado = 1
@@ -45,6 +97,13 @@ def factorial(n):
     return resultado
 
 def leer_matriz():
+    """
+    uso de funciones, listas, listas anadinas, ciclos y ciclos anidados
+    pide n valor de escala y pide i y j como valores de escala y 
+    numerico pidiendo al usuario escribir su propia matriz
+    el programa con los datos dados crea la matriz y la guarda 
+    para que el usuario la pueda sumar o multiplicar 
+    """
     n = int(input("Elige el tamaño: 2 para 2x2 o 3 para 3x3: "))
     print("Ingresa los valores de la matriz:")
     matriz = []
@@ -57,6 +116,15 @@ def leer_matriz():
     return matriz
 
 def suma_mat(a, b):
+    """
+    uso de operadores, funciones, listas, listas anidadas, ciclos
+      ,ciclos anidadas
+    usando la matriz que fue solicitada en la anterior funcion 
+    suma la matriz de fila a columna (i, j) y más adelante 
+    si el tamaño es distinto 
+    marcara error al no ser posible 
+    usando n de la anterior funcion para ver la matriz guardada
+    """
     n = len(a)
     c = [[0 for _ in range(n)] for _ in range(n)]
     for i in range(n):
@@ -65,6 +133,13 @@ def suma_mat(a, b):
     return c
 
 def mult_mat(a, b):
+    """
+    uso de operadores, funciones, listas, listas anidadas, ciclos 
+    ,ciclos anidadas
+    usando la matriz que fue solicitada en la anterior funcion 
+    multiplica la matriz de fila a columna (i, j) 
+    usando n de la anterior funcion para ver la matriz guardada
+    """
     n = len(a)
     c = [[0 for _ in range(n)] for _ in range(n)]
     for i in range(n):
@@ -73,22 +148,49 @@ def mult_mat(a, b):
     return c
 
 def imprimir_matriz(matriz):
+    """
+    uso de funciones, listas, listas anidadas, ciclos,
+      ciclos anidadas
+    despues de que la matriz dada y calculada
+      esta funcion imprime el resultado de dicha matriz si es posible 
+    """
     for fila in matriz:
         print(fila)
 
 def num_random():
-    n = int(input("¿Cuántos números tendrá la lista?: "))
+    """
+    uso de funciones, listas, listas anidadas, ciclos, 
+    ciclos anadidos y biblotecas
+    recibe n como el total de numeros en la lista y v
+    alor para el tener esos numeros aleatorios o no que 
+    de el usuario para devolver 
+    en esa lista un numero al azar 
+    """
+    n = int(input("¿Cuántos valores tendrá la lista?: "))
     lista = []
+
     for i in range(n):
-        valor = input("Ingrese los números: ")
+        valor = input("Ingrese el valor: ")
         lista.append(valor)
+
     indice = int(random.random() * len(lista))
-    print("Número aleatorio elegido de la lista:", lista[indice])
+    print("Valor aleatorio elegido de la lista:", lista[indice])
 
 def potencia(a, b):
+    """
+    uso de operadores y biblotecas
+    recibe a como el numero y b como la potencia 
+    devuelve la potencia de dicho numero 
+    """
     return pow(a, b)
 
 def raiz_cuadrada(x):
+    """
+    usa operadores, condicionales y biblotecas 
+    recibe x como el numero que quieren sacar la raiz 
+    y si ese numero llega a ser negativo devuelve error
+    si no devuelve la raiz de dicho numero
+    """
     if x < 0:
         return "Error: no se puede calcular raíz de número negativo"
     return math.sqrt(x)
@@ -103,18 +205,18 @@ while True:
     print("6. Factorial")
     print("7. Suma de Matrices")
     print("8. Multiplicación de Matrices")
-    print("9. Número random")
+    print("9. Elecciones random")
     print("10. Potencia")
     print("11. Raices")
     print("0. Salir")
- 
+    
     opcion = input("Elige una opción: ")
 
     if opcion == "0":
-        print("Gracias por usar la calculadora.")
-        break
+        print("Nos vemos luego, vaquero.")
+        sys.exit()
 
-    if opcion in ["1", "2", "3", "4", "5"]:
+    if opcion in ["1", "2", "3", "4"]:
         a = int(input("Número 1: "))
         b = int(input("Número 2: "))
 
@@ -129,11 +231,13 @@ while True:
                 print("No se puede dividir entre 0, intenta de nuevo.")
                 b = int(input("Número 2: "))
             print("Resultado de la división:", division(a, b))
-        elif opcion == "5":
-            print("El descuento aplicado es de:", descuento(a, b))
+    elif opcion == "5":
+            a = int(input("¿Cúal es el precio original?: "))
+            b = int(input("¿Cúal es el porcentaje de descuento?: "))
+            print("El descuento seria de:", Descuento(a, b))
 
     elif opcion == "6":
-        n = int(input("Introduce un número entero para calcular su factorial: "))
+        n = int(input("Introduce un número para calcular su factorial: "))
         print("Factorial:", factorial(n))
 
     elif opcion in ["7", "8"]:
@@ -154,13 +258,18 @@ while True:
         num_random()
 
     elif opcion == "10":
-        a = int(input("¿Cuál número quieres elevar?: "))
-        b = int(input("¿Cuál será su potencia?: "))
+        a = int(input("¿Cúal número quieres elevar?: "))
+        b = int(input("¿Cúal sera su potencia?: "))
         print("Potencia:", potencia(a, b))
 
     elif opcion == "11":
-        x = int(input("¿Cuál número quiere conocer su raíz?: "))
-        print("La raíz es:", raiz_cuadrada(x))
+        x = int(input("¿Cúal número quiere conocer su raiz?: "))
+        print("La raiz es:", raiz_cuadrada(x))
 
     else:
         print("Opción no válida.")
+    
+    continuar = input("¿Deseas realizar otra operación? (s/n): ")
+    if continuar != "s":
+        print("Eso Eso Eso es todo amigos")
+        sys.exit()
