@@ -45,7 +45,7 @@ contexto esta idea surgio porque fue lo más basico que se me ocurrio, ademas de
 ademas tiene varias interacciones:
 - Entrada del usuario: aqui el usuario elige lo que gusta calcular
 - Procesamiento interno: aqui el programa con los datos del usuario 
-- Cálculos: aqui hay operadores basicos, operaciones de grado 2 y con biblotecas sacadas de [(random.random)](https://docs.python.org/es/3.13/library/random.html) , [(pow)](https://docs.python.org/3/library/functions.html#pow) y [(math.sqrt) ](https://docs.python.org/3/library/math.html#math.sqrt) pude hacer que las raices funcionen , que el mismo codigo saque un numero aleatorio y usar el pow para poder usar potencias  
+- Cálculos: aqui hay operadores basicos, operaciones de grado 2 y con biblotecas sacadas de [(random.random)](https://docs.python.org/es/3.13/library/random.html) , [(pow)](https://docs.python.org/3/library/functions.html#pow), [(sys)](https://docs.python.org/3/library/sys.html) y [(math.sqrt) ](https://docs.python.org/3/library/math.html#math.sqrt) pude hacer que las raices funcionen , que el mismo codigo saque un numero aleatorio, poder hacer que el sistema cierre cuando el usuario quiera  y usar el pow para poder usar potencias  
 - Salida o resultado: al final saca el resultado del problema que el usuario tenga 
 
 # INSTRUCCIONES
