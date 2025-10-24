@@ -1,0 +1,17 @@
+Correcciones 
+1- Correr con "python Project.py" demas de README bien
+Corri con VISUAL CODE que también incluye Python por lo que el código funciona perfectamente y no he encontrado un error con números grandes o con las matrices 
+y arregle también una función cambie la de porcentaje a descuento que era mi idea original por lo que también lo elimine de las operaciones básicas y le di otra
+sección donde de manera más directa pide el precio y el descuento que tiene para mostrar lo que debería
+también agregue un ciclo while para que no se cierre la calculadora al acabar una operación pero para no usar "break"
+use la biblioteca de sys para usarlo para cerrar el programa y para finalizar cambie el README con el algoritmo y agregando la biblioteca de sys 
+concluyendo con una mejor entrada hacia el proyecto de todo lo que se vio en el curso.
+-----
+2.-Borrar todos los archivos que no son el avance final y el 
+README. Con Github se actualiza el archivo actual y se ve los previos avances en el historial de commits. 
+Como iba poniendo los avances separados para tener una mejor visión de ellos, tuve que eliminarlos para dejarlo al final como "proyecto" y de ahí 
+modifique lo que necesitaba en ese solo lugar.
+-----
+3.-Checa indentación en comentarios para cumplir con pep8
+Cambie solo el texto para que de acuerdo a lo que pep8 dice pero deje lo de las funciones mostrando los componentes que usa para que se vea donde se usaron
+cada avance desde las listas hasta los ciclos anidadas.
